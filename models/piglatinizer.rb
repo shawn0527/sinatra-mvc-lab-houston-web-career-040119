@@ -10,7 +10,7 @@ class PigLatinizer
   end
 
   def fvi
-    self.words_arr[0].index(/[aeiou]/)
+    self.words_arr.map do |index(/[aeiou]/)
   end
 
   def consonant
