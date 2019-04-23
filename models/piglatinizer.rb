@@ -16,11 +16,13 @@ class PigLatinizer
   end
 
   def consonant
-    if self.fvi != 0
-      @consonant = self.word[0..self.fvi]
-    end
-    @consonant
-  end
+    self.words_arr.each do
+      self.fvi.each do |index|
+        if index != 0
+          @consonant = self.word[0..self.fvi]
+        end
+        @consonant
+      end
 
   def piglatinize
     self.conson
